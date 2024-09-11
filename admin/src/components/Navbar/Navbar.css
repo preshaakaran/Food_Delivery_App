@@ -1,0 +1,62 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+.navbar .logo{
+    width: max(10%,80px);
+}
+
+.navbar .profile{
+    width: 40px;
+}
+
+#visual-toggle-button{
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* checkbox */
+#visual-toggle{
+    appearance: none;
+    display: none;
+}
+
+.svgIcon-toggle{
+    width: 25px;
+}
+
+.moon-svg{
+    width: 13px;
+    position: absolute;
+    transition: all .3s;
+}
+.sun-svg{
+    opacity: 0;
+    transition: all .3s;
+}
+.lightmode .sun-svg{
+    filter: brightness(0);
+    transform: rotate(180deg);
+    opacity: 1;
+}
+.lightmode .moon-svg{
+    opacity: 0;
+}
+.animate .moon-svg{
+    transform: rotate(360deg);
+    transition: all .3s;
+}
+
+
+
+
+
+
